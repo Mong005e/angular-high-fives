@@ -15,8 +15,16 @@
       <img src="punisher.png" alt="The Punisher" style="width:304px;height:228px;">
       <h3>This is the Punisher. </h3>
       <h4>He wants to give you a high 5.</h4>
-      <button  class="btn" ng-click=hc.highFive()>Give a High 5</button>
+      <button  class="btn" ng-click='hc.clickFunction()' >Give a High 5</button>
+        <div class="conatiner row">
+            <div ng-repeat='thing in hc.appendObject'>
+                <h4>{{thing.result}}</h4>
+                <h4>{thing.incCounter}</h4>
+            </div>
+        </div>
+
     </div>
+
           <!-- <div ng-repeat='thing in hc.data?'>
           </div> -->
 </body>
