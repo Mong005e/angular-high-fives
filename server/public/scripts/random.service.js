@@ -1,20 +1,19 @@
 myApp.service('HighFiveGen', function (){
 
-var counter =0;
+var self =this;
+self.counter =0;
 //counterGetter
 this.countGetter = function(){
-  console.log('this is counter', counter);
-  return counter;
-
+  console.log('this is counter', self.counter);
+  return self.counter;
 };
 
 //counterSetter
 this.countSetter = function(){
-  counter++;
-
+  self.counter++;
 };
 
- this.getRandom= function(min, max) {
+this.getRandom= function(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 

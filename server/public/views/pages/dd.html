@@ -1,0 +1,13 @@
+<div ng-controller='ddController as dc' class='container row' >
+    <img ng-src="views/daredevil.jpg" alt="Daredevil" style="width:304px;height:425px;">
+    <h3>This is Daredevil. </h3>
+    <h4>He wants to give you a High Five.</h4>
+    <button  class="btn" ng-click='dc.highFive()'>Give a High 5</button>
+
+    <div >
+        <h4>{{dc.results}}</h4>
+        <h4>Successful High Fives: {{dc.countToDisplay}}</h4>
+        <h4>Daredevil's current High Five Skill: {{dc.skill}}</h4>
+      </div>
+
+</div>
