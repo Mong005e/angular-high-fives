@@ -1,9 +1,9 @@
 <div ng-controller='PunisherController as pc' class='container row' >
-    <img ng-src="views/punisher.png" alt="The Punisher" style="width:304px;height:425px;">
+    <img class="col-xs-12" ng-src="views/punisher.png" alt="The Punisher" style="width:304px;height:425px;">
     <h3>This is the Punisher. </h3>
     <h4>He wants to give you a High Five.</h4>
     <button  class="btn" ng-click='pc.highFive()'>Give a High 5</button>
-
+    <hr>
     <div >
         <h4>{{pc.results}}</h4>
         <h4>Successful High Fives: {{pc.countToDisplay}}</h4>
